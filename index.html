@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Project</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>☁ CLOUD SECURITY</h1>
+        <p>Protecting Data, Applications and Cloud Infrastructure</p>
+        <nav>
+            <a href="#iot">IoT</a>
+            <a href="#iam">IAM</a>
+            <a href="#mfa">MFA</a>
+            <a href="#encryption">Encryption</a>
+            <a href="#responsibility">Responsibility Model</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction to Cloud Security</h2>
+            <p>Cloud security is the practice of protecting cloud-based data,
+            applications, servers and networks from cyberattacks,
+            unauthorized access and data theft.</p>
+            <p><strong>Main Goal:</strong> Confidentiality, Integrity and Availability.</p>
+        </section>
+
+        <section id="iot">
+            <h2>1. IoT - Internet of Things</h2>
+            <p>IoT refers to physical devices connected to the internet
+            that collect and exchange information.</p>
+            <h3>Examples</h3>
+            <ul>
+                <li>Smart watches</li>
+                <li>Smart TVs</li>
+                <li>Security cameras</li>
+                <li>Smart home appliances</li>
+                <li>Smart sensors</li>
+            </ul>
+            <h3>Security Risks</h3>
+            <ul>
+                <li>Unauthorized access</li>
+                <li>Weak passwords</li>
+                <li>Device hacking</li>
+                <li>Data theft</li>
+            </ul>
+        </section>
+
+        <section id="iam">
+            <h2>2. IAM - Identity and Access Management</h2>
+            <p>IAM manages who can access cloud resources and
+            what actions they are allowed to perform.</p>
+            <p><strong>Simple Meaning:</strong> IAM decides WHO can access WHAT.</p>
+            <ul>
+                <li>Authentication - Verifies user identity.</li>
+                <li>Authorization - Decides user permissions.</li>
+                <li>User Management - Manages accounts.</li>
+                <li>Access Control - Controls resource access.</li>
+            </ul>
+        </section>
+
+        <section id="mfa">
+            <h2>3. MFA - Multi-Factor Authentication</h2>
+            <p>MFA requires two or more different authentication
+            factors before allowing access.</p>
+            <ul>
+                <li>Something you know - Password or PIN.</li>
+                <li>Something you have - Mobile phone or security key.</li>
+                <li>Something you are - Fingerprint or face recognition.</li>
+            </ul>
+            <h3>Example</h3>
+            <ol>
+                <li>Enter your password.</li>
+                <li>Receive an OTP on your phone.</li>
+                <li>Enter the OTP.</li>
+                <li>Access your account.</li>
+            </ol>
+        </section>
+
+        <section id="encryption">
+            <h2>4. Encryption</h2>
+            <p>Encryption converts readable information (plaintext)
+            into unreadable information (ciphertext) using a key.</p>
+            <h3>Types of Encryption</h3>
+            <ul>
+                <li>Symmetric Encryption - Uses the same key.</li>
+                <li>Asymmetric Encryption - Uses public and private keys.</li>
+            </ul>
+            <h3>Encryption in Cloud</h3>
+            <ul>
+                <li>Data at Rest - Protects stored data.</li>
+                <li>Data in Transit - Protects moving data.</li>
+                <li>Data in Use - Protects data during processing.</li>
+            </ul>
+        </section>
+
+        <section id="responsibility">
+            <h2>5. Cloud Shared Responsibility Model</h2>
+            <p>This model explains how security responsibilities
+            are divided between the Cloud Service Provider and customer.</p>
+
+            <h3>Cloud Provider Responsibilities</h3>
+            <ul>
+                <li>Physical data center security.</li>
+                <li>Hardware and servers.</li>
+                <li>Networking infrastructure.</li>
+                <li>Cloud infrastructure maintenance.</li>
+            </ul>
+
+            <h3>Customer Responsibilities</h3>
+            <ul>
+                <li>Strong passwords.</li>
+                <li>Enable MFA.</li>
+                <li>Manage IAM permissions.</li>
+                <li>Encrypt sensitive data.</li>
+                <li>Secure applications.</li>
+            </ul>
+
+            <h3>Service Models</h3>
+            <table>
+                <tr>
+                    <th>Responsibility</th>
+                    <th>IaaS</th>
+                    <th>PaaS</th>
+                    <th>SaaS</th>
+                </tr>
+                <tr>
+                    <td>Physical Security</td>
+                    <td>Provider</td>
+                    <td>Provider</td>
+                    <td>Provider</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>Customer</td>
+                    <td>Provider</td>
+                    <td>Provider</td>
+                </tr>
+                <tr>
+                    <td>Applications</td>
+                    <td>Customer</td>
+                    <td>Customer</td>
+                    <td>Provider</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Customer</td>
+                    <td>Customer</td>
+                    <td>Customer</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>6. Quick Revision</h2>
+            <ul>
+                <li>IoT = Connected Devices</li>
+                <li>IAM = Access Management</li>
+                <li>MFA = Multiple Verification</li>
+                <li>Encryption = Data Protection</li>
+                <li>Shared Responsibility = Provider + Customer</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>7. Conclusion</h2>
+            <p>Cloud security is essential for protecting digital
+            information and cloud infrastructure. IoT connects devices,
+            IAM controls access, MFA provides extra authentication,
+            encryption protects data and the Shared Responsibility
+            Model divides security duties.</p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>☁ Cloud Security Project</h3>
+        <p>Learn | Protect | Secure</p>
+        <p>© <span id="current-year"></span> Cloud Security</p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
